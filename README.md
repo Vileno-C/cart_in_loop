@@ -9,7 +9,7 @@ Imagine um corpo que inicia seu movimento a partir de uma altura $h$ acima do to
 O código foi implementado em Python, permitindo que os usuários configurem parâmetros como altura inicial, raio do looping e aceleração da gravidade para observar diferentes cenários.
 
 <p align="center">
-  <img src="imagens/looping.png" alt="Simulação de looping">
+  <img src="image1.png">
   <br>
 </p>
 
