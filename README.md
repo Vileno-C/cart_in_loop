@@ -1,7 +1,7 @@
 # Conservação de Energia Mecânica e o Problema do Looping
 
 ## Descrição Básica do Projeto
-Este projeto é uma simulação criada para ilustrar o conceito de conservação de energia mecânica e seu papel no problema do looping. A ideia central é demonstrar como a energia potencial gravitacional é convertida em energia cinética enquanto um objeto percorre um looping circular, sem considerar os efeitos de atrito.
+Este projeto é uma simulação criada para ilustrar o conceito de conservação de energia mecânica e seu papel no problema do looping. A ideia central é demonstrar como a energia potencial gravitacional é convertida em energia cinética enquanto um objeto percorre um looping circular, considerarando os efeitos de atrito.
 
 **Um objeto atravessando um looping circular:**
 Imagine um corpo que inicia seu movimento a partir de uma altura $h$ acima do topo de um looping de raio $R$. Este objeto possui energia potencial gravitacional no início e, à medida que se move, converte essa energia em energia cinética para completar o percurso no looping. Este projeto permite explorar como a altura inicial do corpo impacta sua habilidade de completar o looping.
@@ -9,7 +9,7 @@ Imagine um corpo que inicia seu movimento a partir de uma altura $h$ acima do to
 O código foi implementado em Python, permitindo que os usuários configurem parâmetros como altura inicial, raio do looping e aceleração da gravidade para observar diferentes cenários.
 
 <p align="center">
-  <img src="image1.png">
+  <img src="image2.png">
   <br>
 </p>
 
@@ -17,7 +17,7 @@ O código foi implementado em Python, permitindo que os usuários configurem par
 
 ### Conservação de Energia Mecânica
 
-No contexto da conservação de energia mecânica, a energia total do sistema permanece constante na ausência de forças dissipativas, como o atrito. A energia total pode ser expressa como a soma da energia potencial gravitacional ($E_p$) e da energia cinética ($E_c$):
+No contexto da conservação de energia mecânica, a energia total do sistema permanece constante na ausência de forças dissipativas, como a resistência do ar. A energia total pode ser expressa como a soma da energia potencial gravitacional ($E_p$) e da energia cinética ($E_c$):
 
 $$
 E_{total} = E_p + E_c
@@ -52,7 +52,7 @@ $$
 onde $\theta$ é o ângulo no looping, $y$ é a altura atual, e $R$ é o raio do looping.
 
 <p align="center">
-  <img src="image2.png" alt="Conceitos de conservação de energia">
+  <img src="image3.png" alt="Conceitos de conservação de energia">
   <br>
   <em>Figura 1: Conversão de energia durante o looping.</em>
 </p>
@@ -62,7 +62,7 @@ onde $\theta$ é o ângulo no looping, $y$ é a altura atual, e $R$ é o raio do
 - **Linguagens e Pacotes:**
   Este projeto foi desenvolvido em Python, utilizando os pacotes:
   - **NumPy:** para cálculos matemáticos.
-  - **Matplotlib:** para criação de gráficos e animações.
+  - **PyGame:** para criação de animações.
 
 ## Como Usar
 
@@ -71,11 +71,12 @@ onde $\theta$ é o ângulo no looping, $y$ é a altura atual, e $R$ é o raio do
 2. Instale os pacotes necessários com o comando:
 
 ```bash
-pip install -r requirements.txt
+pip install numpy
+pip install pygame
 ```
 
 ### Execução da Simulação
-1. Baixe o código e os arquivos auxiliares.
+1. Baixe o código.
 2. Execute o script principal com:
 
 ```bash
@@ -86,18 +87,15 @@ python main.py
    - Altura inicial do objeto ($h$).
    - Raio do looping ($R$).
    - Aceleração da gravidade ($g$).
-   - Duração da simulação.
 
 ### Saída do Programa
-O programa gera uma animação que mostra o movimento do objeto, destacando a conservação de energia mecânica durante o percurso do looping.
+O programa gera uma animação que mostra o movimento do objeto, destacando a a velociadade durante o percurso do looping.
 
 ## Informações sobre o Projeto
 Este projeto foi desenvolvido por:
 
-Julia Marcolan Teixeira: juliamarcolan@usp.br
-
-Como exemplo de entrega para a disciplina 7600105 - Física Básica I (2024) da USP-São Carlos, ministrada pelos professores Krissia de Zawadzki e Esmerindo de Sousa Bernardes.
+Vileno Cunha Cavalcante: vilenocavalcante@usp.br
 
 ## Referências
-(1) Bernardes, E. de S. (2024). Dinâmica-v2 (Notas de aula). 7600105 - Física Básica I. Universidade de São Paulo, São Carlos.
+Silva, Nelson. (2015). Looping: solução da lagrangiana, simulação computacional e estratégias didáticas. Caderno Brasileiro de Ensino de Física. 32. 963. 10.5007/2175-7941.2015v32n3p963. 
 
