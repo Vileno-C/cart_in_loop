@@ -52,7 +52,7 @@ $$
 onde $\theta$ é o ângulo no looping, $y$ é a altura atual, e $R$ é o raio do looping.
 
 <p align="center">
-  <img src="imagens/conservacao_energia.png" alt="Conceitos de conservação de energia">
+  <img src="image2.png" alt="Conceitos de conservação de energia">
   <br>
   <em>Figura 1: Conversão de energia durante o looping.</em>
 </p>
