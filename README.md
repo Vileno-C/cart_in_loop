@@ -1,12 +1,12 @@
 # Conservação de Energia Mecânica e o Problema do Looping
 
 ## Descrição Básica do Projeto
-Este projeto é uma simulação criada para ilustrar o conceito de conservação de energia mecânica e seu papel no problema do looping. A ideia central é demonstrar como a energia potencial gravitacional é convertida em energia cinética enquanto um objeto percorre um looping circular, considerarando os efeitos de atrito.
+Este projeto é uma simulação criada para ilustrar o conceito de conservação de energia mecânica e seu papel no problema do looping. A ideia central é demonstrar como a energia potencial gravitacional é convertida em energia cinética enquanto um objeto percorre um looping circular.
 
 **Um objeto atravessando um looping circular:**
 Imagine um corpo que inicia seu movimento a partir de uma altura $h$ acima do topo de um looping de raio $R$. Este objeto possui energia potencial gravitacional no início e, à medida que se move, converte essa energia em energia cinética para completar o percurso no looping. Este projeto permite explorar como a altura inicial do corpo impacta sua habilidade de completar o looping.
 
-O código foi implementado em Python, permitindo que os usuários configurem parâmetros como altura inicial, raio do looping e aceleração da gravidade para observar diferentes cenários.
+O código foi implementado em Python, permitindo que os usuários configurem parâmetros como altura inicial para observar diferentes cenários.
 
 <p align="center">
   <img src="imagens/image1.png">
