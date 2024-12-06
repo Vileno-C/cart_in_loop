@@ -17,29 +17,65 @@ O código foi implementado em Python, permitindo que os usuários configurem par
 
 ### Conservação de Energia Mecânica
 
-No contexto da conservação de energia mecânica, a energia total do sistema permanece constante na ausência de forças dissipativas, como a resistência do ar. A energia total pode ser expressa como a soma da energia potencial gravitacional ($E_p$) e da energia cinética ($E_c$):
+Considere um carrinho de massa $m$ que percorre um loop vertical de raio $R$. O estudo deste problema pode ser iniciado com os conceitos de conservação de energia mecânica:
+
+**Energia Mecânica Conservada:**
+Quando apenas forças conservativas (como a gravidade) atuam, a energia mecânica total $E$ é conservada:
 
 $$
-E_{total} = E_p + E_c
+E = T + V = \frac{1}{2} m v^2 + m g h,
 $$
 
-A energia potencial gravitacional é dada por:
+onde:
+- $v$ é a velocidade do carrinho,
+- $g$ é a aceleração da gravidade,
+- $h$ é a altura em relação a um referencial escolhido.
+
+**Condições para Permanecer no Loop:**
+Para que o carrinho complete o loop sem perder contato com o trilho, a força normal na parte superior deve ser não negativa. Na posição mais alta ($h = 2R$), a força normal $N$ e a força gravitacional fornecem a força centrípeta necessária:
 
 $$
-E_p = m \cdot g \cdot h
+\frac{m v^2}{R} = m g + N.
 $$
 
-e a energia cinética por:
+Para $N \geq 0$, requer-se $v^2 \geq g R$ na parte superior. Combinando com a conservação de energia, a altura mínima inicial $h_0$ para completar o loop é:
 
 $$
-E_c = \frac{1}{2} m \cdot v^2
+h_0 = \frac{5}{2} R.
 $$
 
-Ao longo do movimento, a energia é convertida entre $E_p$ e $E_c$. A condição para completar o looping é que o objeto tenha energia suficiente para superar o ponto mais alto do percurso, onde a velocidade mínima é:
+**Equação Diferencial do Movimento:**
+Introduzindo as forças e acelerações em um loop genérico, o movimento pode ser descrito por:
 
 $$
-v_{min} = \sqrt{g \cdot R}
+m \frac{d^2 s}{d t^2} = -\frac{\partial V}{\partial s} - \beta \frac{d s}{d t},
 $$
+
+onde:
+- $s$ é a posição ao longo do trilho,
+- $V(s)$ é o potencial gravitacional $V(s) = m g h(s)$,
+- $\beta$ é o coeficiente de atrito proporcional à velocidade, se presente.
+
+Esta EDO modela o movimento com dissipação. Se o atrito é desconsiderado ($\beta = 0$), a equação simplifica para:
+
+$$
+m \frac{d^2 s}{d t^2} = -m g \frac{\partial h(s)}{\partial s}.
+$$
+
+**Modelagem Com Dissipação (EDO):**
+Para incluir dissipação energética, seja $F_{\text{não-cons.}} = -\beta v$. Assim, a energia mecânica decai no tempo:
+
+$$
+\frac{d E}{d t} = -\beta v^2.
+$$
+
+Combinando:
+
+$$
+\frac{d^2 s}{d t^2} + \frac{\beta}{m} \frac{d s}{d t} + g \frac{\partial h}{\partial s} = 0.
+$$
+
+Essa é uma EDO de segunda ordem.
 
 ### Trajetória no Looping
 
